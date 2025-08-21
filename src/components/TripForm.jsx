@@ -64,8 +64,8 @@ export default function TripForm({ user }) {
         <input type="date" name="date" value={form.date} onChange={onChange} className="w-full border rounded-lg px-3 py-2" />
       </div>
       <div>
-        <label className="block text-sm mb-1">Location</label>
-        <input name="location" value={form.location} onChange={onChange} className="w-full border rounded-lg px-3 py-2" />
+        <label className="label">Location</label>
+        <input name="location" value={form.location} onChange={onChange} className="input" />
       </div>
       <div>
         <label className="block text-sm mb-1">Fish caught, comma separated</label>

@@ -29,10 +29,12 @@ export default function TripList({ user }) {
     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
       {/* Map over trips and display each one (location, date, species) */}
       {trips.map(t => (
-        <li key={t.id} className="rounded-2xl border p-4">
+        <li key={t.id} className="card p-4">
           <h3 className="text-lg font-semibold">{t.location || "Unknown spot"}</h3>
-          <p className="text-sm opacity-80">{new Date(t.date).toLocaleDateString()}</p>
-          <p className="mt-2 text-sm">Fish, {(t.species || []).join(", ") || "n,a"}</p>
+          <p className="text-sm text-gray-500">{new Date(t.date).toLocaleDateString()}</p>
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+            Fish: {(t.species || []).join(", ") || "N/A"}
+          </p>
         </li>
       ))}
     </ul>

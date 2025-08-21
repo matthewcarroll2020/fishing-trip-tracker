@@ -10,15 +10,13 @@ import TripForm from "./components/TripForm.jsx";
 // Navbar component for navigation
 function Navbar({ user }) {
   return (
-    <header className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-      <Link to="/" className="text-xl font-semibold">Trip Tracker</Link>
+    <header className="container-app py-4 flex items-center justify-between">
+      <a href="#/" className="text-xl font-semibold">CCT Trip Tracker</a>
       <nav className="flex items-center gap-3">
-        {/* Add trip form route */}
-        {user && <Link to="/add" className="px-3 py-2 rounded-lg bg-black text-white">Add trip</Link>}
-        {/* Sign in/sign out button */}
+        {user && <a href="#/add" className="btn btn-primary">Add trip</a>}
         {user
-          ? <button onClick={() => signOut(auth)} className="px-3 py-2 rounded-lg border">Sign out</button>
-          : <button onClick={() => signInWithPopup(auth, provider)} className="px-3 py-2 rounded-lg bg-black text-white">Sign in with Google</button>}
+          ? <button onClick={() => signOut(auth)} className="btn btn-outline">Sign out</button>
+          : <button onClick={() => signInWithPopup(auth, provider)} className="btn btn-primary">Sign in with Google</button>}
       </nav>
     </header>
   );
