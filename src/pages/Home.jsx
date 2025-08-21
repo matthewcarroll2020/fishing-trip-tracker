@@ -1,8 +1,13 @@
+// Home page for the fishing trip tracker app
+
 import TripList from "../components/TripList.jsx";
 import { Link } from "react-router-dom";
 
 export default function Home({ user }) {
-  if (!user) return <p className="mt-6">Please sign in on the Welcome page.</p>;
+  // If user is not logged in, prompt to sign in
+  if (!user) return <p className="mt-6">Please sign in to view your trips.</p>;
+
+  // If user is logged in, show their trips
   return (
     <section className="mt-6">
       <div className="flex items-center justify-between">
