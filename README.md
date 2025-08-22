@@ -27,7 +27,7 @@ Users can sign in with their Google account, add trips with location and fish ca
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```plaintext
 src/
  ├─ components/      # Reusable UI components (TripForm, TripList)
