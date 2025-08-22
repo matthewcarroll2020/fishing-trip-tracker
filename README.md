@@ -1,12 +1,47 @@
-# React + Vite
+# CCT Fishing Trip Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fishing isn’t just about the catch, it’s about the stories, memories, and details of each trip.  
+The **Fishing Trip Tracker** is a React web app built to help anglers log and manage their fishing adventures.  
+Users can sign in with their Google account, add trips with location and fish caught, and revisit their fishing history anytime.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Google Authentication** with Firebase Auth  
+- **Add Trips** with:
+  - Date
+  - Location
+  - Fish caught  
+- **View Saved Trips** in a clean card layout  
+- **Delete Trips** instantly with a red "Remove" button  
+- **Responsive UI** styled with Tailwind CSS  
+- **Deployed to GitHub Pages** for quick access  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- [React](https://reactjs.org/) + [Vite](https://vitejs.dev/) (modern frontend tooling)  
+- [Firebase](https://firebase.google.com/) (Authentication + Firestore Database)  
+- [Tailwind CSS](https://tailwindcss.com/) (utility-first CSS framework)  
+- [GitHub Pages](https://pages.github.com/) (deployment hosting)  
+
+---
+
+## 📂 Project Structure
+```plaintext
+src/
+ ├─ components/      # Reusable UI components (TripForm, TripList)
+ ├─ pages/           # App pages (Welcome, Home)
+ ├─ lib/             # Firebase configuration
+ ├─ App.jsx          # Main app structure
+ ├─ main.jsx         # App entry point
+ └─ index.css        # Tailwind global styles
+```
+
+## Future Improvements
+- Add tide, moon cycle, water temperature, and weather integration
+- Upload fishing photos to trips
+- Share trips with friends or groups
+- Advanced filtering & search by fish type, date, or location
+
+Made by Matthew Carroll
